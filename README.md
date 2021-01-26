@@ -2,6 +2,12 @@
 
 The goal of this project is to secure `movies-app` using [`Keycloak`](https://www.keycloak.org/)(with PKCE). `movies-app` consists of two applications: one is a [Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/) Rest API called `movies-api` and another is a [ReactJS](https://reactjs.org/) application called `movies-ui`.
 
+## Startup:
+
+* Run the docker-compose file to start up mongo (for the app) mysql (for keycloak), keycloak server
+* Run `spring-boot:run -Dspring-boot.run.arguments=--server.port=9080` to start the server
+* Run `npm start` to start the UI.  Don't forget to get a temporary omdb api key and enter it in OmdbAPI.js
+
 ## Project diagram
 
 ![project-diagram](images/project-diagram.png)
